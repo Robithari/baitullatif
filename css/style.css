@@ -110,6 +110,7 @@ p {
 .search-wrapper i.material-icons {
   position: absolute;
   top: 0px;
+  text-align: center;
   right: 20px;
   cursor: pointer;
   color: #303030;
@@ -1768,12 +1769,14 @@ form .file-field .file-path-wrapper .file-path {
   padding-bottom: 30px; }
 
 .section.news .news-content .news-title {
+  text-align: center;
   font-weight: 600;
   color: #318bb1;
   font-size: 18px;
   padding: 10px 0px 0px; }
 
 .section.news .news-content .news-title a {
+  text-align: center;
   color: #318bb1; }
 
 .section.news .news-content .date {
