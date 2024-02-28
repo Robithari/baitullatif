@@ -1729,6 +1729,7 @@ form .file-field .file-path-wrapper .file-path {
   border-radius: 10px; }
 
 .section.list-news .row-list-news .news-item .news-item-info .list-news-title {
+  teks text-align: center;
   font-weight: 600; }
 
 .section.list-news .readmore {
@@ -2104,3 +2105,8 @@ body.page-preview .content-right p {
   margin-bottom: 40px; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.news-title {
+  text-align: center;
+}

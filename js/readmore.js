@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var toggleContent3 = document.getElementById("toggle-content-3");
   var fullContent3 = document.getElementById("full-content-3");
 
+  var toggleContent4 = document.getElementById("toggle-content-4");
+  var fullContent4 = document.getElementById("full-content-4");
+
   fullContent1.style.display = "none";
   toggleContent1.textContent = "Baca Selengkapnya";
 
@@ -16,6 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   fullContent3.style.display = "none";
   toggleContent3.textContent = "Baca Selengkapnya";
+
+  
+  fullContent4.style.display = "none";
+  toggleContent4.textContent = "Baca Selengkapnya";
 
   toggleContent1.addEventListener("click", function() {
     if (fullContent1.style.display === "none") {
@@ -44,6 +51,16 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       fullContent3.style.display = "none";
       toggleContent3.textContent = "Baca Selengkapnya";
+    }
+  });
+
+  toggleContent4.addEventListener("click", function() {
+    if (fullContent4.style.display === "none") {
+      fullContent4.style.display = "block";
+      toggleContent4.textContent = "Tutup Bacaan";
+    } else {
+      fullContent4.style.display = "none";
+      toggleContent4.textContent = "Baca Selengkapnya";
     }
   });
 });
