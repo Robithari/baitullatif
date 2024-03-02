@@ -716,7 +716,6 @@ nav a.button-collapse {
     text-align: center;
     vertical-align: middle;
     padding: 15px;
-    transition: background-color 0.9s ease-in-out, opacity 0.3s ease-in-out; /* Menambahkan transisi untuk perubahan warna latar belakang dan opacity */
   }
   
   .section.home-category .content .in-content .in-in-content:hover {
