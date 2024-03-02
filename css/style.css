@@ -2122,3 +2122,18 @@ body.page-preview .content-right p {
 
 
 
+.icon {
+  width: 50px; /* Sesuaikan dengan ukuran ikon */
+  height: 50px; /* Sesuaikan dengan ukuran ikon */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Efek perbesaran saat ikon dihover */
+}
+
+.icon:active {
+  transform: scale(0.9); /* Efek perkecilan saat ikon diklik */
+}
+
+
+

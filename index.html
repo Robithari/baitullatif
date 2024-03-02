@@ -260,20 +260,24 @@
      
     <div class="row icon-service">
       <div class="col s4 m4 l2">
-        <a href="Sholawatan.html" target="_blank" class="icon-content">
-          <div class="content fadetransition">
+        <a href="Sholawatan.html" class="icon-content">
+          <div class="content">
             <div class="in-content">
               <div class="in-in-content">
-                <img src="img/Sholawat.png" alt="category">
+                <img src="img/Sholawat.png" alt="category" class="icon">
                 <h5>SHOLAWATAN</h5>
               </div>
             </div>
           </div>
         </a>
+        
+        
+        
+        
       </div>
       
       <div class="col s4 m4 l2">
-        <a href="Info.html" target="_blank" class="icon-content">
+        <a href="Info.html" class="icon-content">
           <div class="content fadetransition">
             <div class="in-content">
               <div class="in-in-content">
@@ -587,22 +591,19 @@
   document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.icon-content').forEach(function(element) {
       element.addEventListener('click', function(event) {
-        event.preventDefault(); // Mencegah aksi default pengalihan URL
-        // Toggle class 'clicked' saat elemen diklik
-        this.querySelector('.in-in-content').classList.add('clicked');
-        var url = this.getAttribute('href'); // Mendapatkan URL yang ditentukan
+        event.preventDefault(); // Prevent the default link behavior
+        this.querySelector('.in-in-content').classList.add('clicked'); // Add the 'clicked' class to the icon
+        var url = this.getAttribute('href'); // Get the URL from the link
         if (url) {
           setTimeout(function() {
-            window.location.href = url; // Melakukan pengalihan URL setelah transisi
-          }, 500); // Sesuaikan dengan durasi transisi CSS
-          setTimeout(function() {
-            document.querySelector('.clicked').classList.remove('clicked'); // Menghapus kelas 'clicked' setelah sejumlah waktu tertentu
-          }, 50); // Sesuaikan dengan durasi tampilan sebelum menghilangkan kelas 'clicked'
+            window.location.href = url; // Redirect to the URL after a delay
+          }, 500); // Adjust the delay as needed
         }
       });
     });
   });
-  </script>  
+</script>
+
 
 </body>
 
