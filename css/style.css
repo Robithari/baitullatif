@@ -718,10 +718,7 @@ nav a.button-collapse {
     padding: 15px;
   }
   
-  .section.home-category .content .in-content .in-in-content:hover {
-    background-color: hsl(191, 87%, 41%);
-    opacity: 0.7; /* Nilai opacity saat dihover */
-  }
+
   
   .section.home-category .content .in-content .in-in-content.clicked {
     opacity: 0.5; /* Nilai opacity saat diklik */
@@ -1641,8 +1638,6 @@ form .file-field .file-path-wrapper .file-path {
   -webkit-appearance: none;
   margin: 0; }
 
-.qty-total-price input[type=number] {
-  -moz-appearance: textfield; }
 
 .qty-total-price {
   background-color: #f6f6f6;
@@ -1744,7 +1739,6 @@ form .file-field .file-path-wrapper .file-path {
   border-radius: 10px; }
 
 .section.list-news .row-list-news .news-item .news-item-info .list-news-title {
-  teks text-align: center;
   font-weight: 600; }
 
 .section.list-news .readmore {
