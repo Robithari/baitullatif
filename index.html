@@ -602,10 +602,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
-
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.icon-content').forEach(function(element) {
+    element.addEventListener('click', function(event) {
+      event.preventDefault(); // Mencegah aksi default pengalihan URL
+      // Toggle class 'clicked' saat elemen diklik
+      this.querySelector('.in-in-content').classList.add('clicked');
+    });
+  });
+});
+
+// Event listener untuk event 'pageshow'
+window.addEventListener('pageshow', function(event) {
+  // Cek jika event 'pageshow' dipicu oleh navigasi kembali
+  if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
+    // Periksa apakah ada elemen yang memiliki kelas 'clicked'
+    var clickedElements = document.querySelectorAll('.clicked');
+    if (clickedElements.length > 0) {
+      // Jika ada, hapus kelas 'clicked' dan refresh halaman
+      clickedElements.forEach(function(element) {
+        element.classList.remove('clicked');
+      });
+      location.reload(); // Merefresh halaman
+    }
+  }
+});
+
+</script>
 
 
 
