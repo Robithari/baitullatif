@@ -716,11 +716,11 @@ nav a.button-collapse {
   text-align: center;
   vertical-align: middle;
   padding: 15px;
-  transition: background-color 0.3s ease-in-out; /* Efek transisi untuk perubahan warna latar belakang */
+  transition: background-color 0.9s ease-in-out; /* Efek transisi untuk perubahan warna latar belakang */
 }
 
 .section.home-category .content .in-content .in-in-content:hover {
-  background-color: #f0f0f0; /* Ganti dengan warna latar belakang yang diinginkan saat elemen dihover */
+  background-color: hsl(191, 87%, 41%), 87%, 41%), 87%, 41%), 87%, 41%), 87%, 41%), 85%, 46%), 93%, 53%), 93%, 53%), 100%, 52%)/* Ganti dengan warna latar belakang yang diinginkan saat elemen dihover */
 }
 
 
