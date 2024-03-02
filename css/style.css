@@ -711,30 +711,39 @@ nav a.button-collapse {
   display: table;
   position: absolute; }
 
-.section.home-category .content .in-content .in-in-content {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  padding: 15px;
-  transition: background-color 0.9s ease-in-out; /* Efek transisi untuk perubahan warna latar belakang */
-}
-
-.section.home-category .content .in-content .in-in-content:hover {
-  background-color: hsl(191, 87%, 41%), 87%, 41%), 87%, 41%), 87%, 41%), 87%, 41%), 85%, 46%), 93%, 53%), 93%, 53%), 100%, 52%)/* Ganti dengan warna latar belakang yang diinginkan saat elemen dihover */
-}
-
-
-.section.home-category .content .in-content .in-in-content img {
-  width: 60%;
-  height: auto; }
-
-.section.home-category i {
-  font-size: 30px;
-  margin-bottom: 5px; }
-
-.section.home-category .content .in-content .in-in-content h5 {
-  font-weight: 600;
-  font-size: 10px; }
+  .section.home-category .content .in-content .in-in-content {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+    transition: background-color 0.9s ease-in-out, opacity 0.3s ease-in-out; /* Menambahkan transisi untuk perubahan warna latar belakang dan opacity */
+  }
+  
+  .section.home-category .content .in-content .in-in-content:hover {
+    background-color: hsl(191, 87%, 41%);
+    opacity: 0.7; /* Nilai opacity saat dihover */
+  }
+  
+  .section.home-category .content .in-content .in-in-content.clicked {
+    opacity: 0.5; /* Nilai opacity saat diklik */
+  }
+  
+  .section.home-category .content .in-content .in-in-content img {
+    width: 60%;
+    height: auto;
+  }
+  
+  .section.home-category i {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .section.home-category .content .in-content .in-in-content h5 {
+    font-weight: 600;
+    font-size: 10px;
+  }
+  
+  
 
 /*==================================================
 6. POPULER SEARCH

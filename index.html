@@ -259,29 +259,32 @@
   <div class="container">
      
     <div class="row icon-service">
-      <div class="col s4 m4 l2"><a class="icon-content">
-        <a href="Info.html" target="_blank" class="icon-content">
-        <div class="content fadetransition">
-          <div class="in-content">
-            <div class="in-in-content">
-              <img src="img/info.png" alt="category">
-              <h5>INFORMASI</h5>
+      <div class="col s4 m4 l2">
+        <a href="Sholawatan.html" target="_blank" class="icon-content">
+          <div class="content fadetransition">
+            <div class="in-content">
+              <div class="in-in-content">
+                <img src="img/Sholawat.png" alt="category">
+                <h5>SHOLAWATAN</h5>
+              </div>
             </div>
           </div>
         </a>
-        </div></a>
       </div>
-      <div class="col s4 m4 l2"><a class="icon-content">
-        <a href="Sholawatan.html" target="_blank" class="icon-content">
-        <div class="content fadetransition">
-          <div class="in-content">
-            <div class="in-in-content">
-              <img src="img/Sholawat.png" alt="category">
-              <h5>SHOLAWATAN</h5>
+      
+      <div class="col s4 m4 l2">
+        <a href="Info.html" target="_blank" class="icon-content">
+          <div class="content fadetransition">
+            <div class="in-content">
+              <div class="in-in-content">
+                <img src="img/info.png" alt="category">
+                <h5>INFORMASI</h5>
+              </div>
             </div>
           </div>
-        </div></a>
+        </a>
       </div>
+      
       <div class="col s4 m4 l2"><a class="icon-content">
         <div class="content fadetransition">
           <div class="in-content">
@@ -581,18 +584,24 @@
 <script src="js/custom.js"></script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.icon-content').forEach(function(element) {
-      element.addEventListener('click', function(event) {
-        event.preventDefault(); // Mencegah aksi default pengalihan URL
-        var url = this.getAttribute('href'); // Mendapatkan URL yang ditentukan
-        if (url) {
-          window.location.href = url; // Melakukan pengalihan URL
-        }
-      });
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.icon-content').forEach(function(element) {
+    element.addEventListener('click', function(event) {
+      event.preventDefault(); // Mencegah aksi default pengalihan URL
+      // Toggle class 'clicked' saat elemen diklik
+      this.querySelector('.in-in-content').classList.toggle('clicked');
+      var url = this.getAttribute('href'); // Mendapatkan URL yang ditentukan
+      if (url) {
+        setTimeout(function() {
+          window.location.href = url; // Melakukan pengalihan URL setelah transisi
+        }, 500); // Sesuaikan dengan durasi transisi CSS
+      }
     });
   });
+});
+
 </script>
+
 
 
 
