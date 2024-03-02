@@ -589,16 +589,20 @@ document.addEventListener('DOMContentLoaded', function() {
     element.addEventListener('click', function(event) {
       event.preventDefault(); // Mencegah aksi default pengalihan URL
       // Toggle class 'clicked' saat elemen diklik
-      this.querySelector('.in-in-content').classList.toggle('clicked');
+      this.querySelector('.in-in-content').classList.add('clicked');
       var url = this.getAttribute('href'); // Mendapatkan URL yang ditentukan
       if (url) {
         setTimeout(function() {
           window.location.href = url; // Melakukan pengalihan URL setelah transisi
         }, 500); // Sesuaikan dengan durasi transisi CSS
+        setTimeout(function() {
+          document.querySelector('.clicked').classList.remove('clicked'); // Menghapus kelas 'clicked' setelah sejumlah waktu tertentu
+        }, 50); // Sesuaikan dengan durasi tampilan sebelum menghilangkan kelas 'clicked'
       }
     });
   });
 });
+
 
 </script>
 
