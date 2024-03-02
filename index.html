@@ -587,22 +587,7 @@
 <!-- Custom script -->
 <script src="js/custom.js"></script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.icon-content').forEach(function(element) {
-      element.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default link behavior
-        this.querySelector('.in-in-content').classList.add('clicked'); // Add the 'clicked' class to the icon
-        var url = this.getAttribute('href'); // Get the URL from the link
-        if (url) {
-          setTimeout(function() {
-            window.location.href = url; // Redirect to the URL after a delay
-          }, 500); // Adjust the delay as needed
-        }
-      });
-    });
-  });
-</script>
+
 
 
 </body>
