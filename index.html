@@ -585,11 +585,15 @@
     document.querySelectorAll('.icon-content').forEach(function(element) {
       element.addEventListener('click', function(event) {
         event.preventDefault(); // Mencegah aksi default pengalihan URL
-        window.location.href = this.getAttribute('href'); // Melakukan pengalihan URL
+        var url = this.getAttribute('href'); // Mendapatkan URL yang ditentukan
+        if (url) {
+          window.location.href = url; // Melakukan pengalihan URL
+        }
       });
     });
   });
 </script>
+
 
 
 </body>
