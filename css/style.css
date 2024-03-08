@@ -60,7 +60,7 @@ body {
   margin: 0; }
 
 p {
-  margin: 5px 0;
+  margin: auto;
   line-height: 20px; }
 
 .text-justify {
@@ -381,14 +381,13 @@ ul.pagination {
 3. SIDE NAVIGATION
 ==================================================*/
 body nav {
-  height: 56px !important; }
+  height: 100px !important; }
 
 nav .collapsible-header i,
 nav .side-nav li > a > i,
 nav .side-nav li > a > [class^="mdi-"],
 nav .side-nav li > a li > a > [class*="mdi-"],
 nav .side-nav li > a > i.material-icons {
-  height: auto;
   padding: 0px 0px;
   margin: 0px 0px;
   line-height: normal !important;
@@ -556,7 +555,7 @@ nav .side-nav .profile h6 {
 4. HEADER
 ==================================================*/
 header {
-  height: 56px;
+  height: 100px;
   background-color: #ffffff;
   position: fixed;
   width: 100%;
@@ -2114,6 +2113,4 @@ body.page-preview .content-right p {
   text-decoration: none;
   color: inherit;
 }
-
-
 

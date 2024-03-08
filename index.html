@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,6 +26,11 @@
 <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
 <!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
+
+
+
+
+
 </head>
 <body id="homepage">
 <!-- BEGIN PRELOADING -->
@@ -37,24 +41,63 @@
 </div>
 <!-- END PRELOADING -->
 <!-- HEADER -->
+<!-- HEADER -->
+<!-- HEADER -->
+<!-- HEADER -->
 <header id="header">
-<div class="nav-wrapper container">
-
-
-   <div class="header-menu-button">
-    <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category">
-
-    </a>
-  </div>
-  <div class="header-logo">
-    <a href="#" class="nav-logo">BAITUL LATIF</a>
-  </div>
-
- 
- 
+  <div class="nav-wrapper container">
+    <div class="header-menu-button">
+      <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category"></a>
+    </div>
+    <div class="header-logo">
+      <a href="#" class="nav-logo">BAITUL LATIF</a>
+      <br>
+      <!-- Jadwal Sholat -->
+      <div class="carousel-inner"> 
+        <div class="card-body">
+            <p style="font-size: 9px;">
+                <span class="body-text" style=" font-weight: bold;">Jadwal Sholat Jember dan Sekitarnya</span>
+                <span class="text-muted" id="jadwal-date" style="color: green; font-weight: bold;">LOADING...</span>
+            </p>
+        </div>
+    </div>
+    
+    
+    
+    <table class="table" style="border-collapse: collapse; width: 100%; border: none; font-size: 9px;">
+      <thead>
+          <tr class="isi-table">
+              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Subuh</th>
+              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none;">Dzuhur</th>
+              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Ashar</th>
+              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none;">Maghrib</th>
+              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Isya</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr class="input-waktu" style="border: none; color: green; font-weight: bold;">
+              <td class="subuh" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
+              <td class="dzuhur" style="padding: 1px; text-align: center;">--:--</td>
+              <td class="ashar" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
+              <td class="maghrib" style="padding: 1px; text-align: center;">--:--</td>
+              <td class="isya" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
+          </tr>
+      </tbody>
+  </table>
   
-</div>
+  
+  
+  
+  
+            
+      
+        <!-- Jadwal Sholat end -->
+    </div>
+  </div>
 </header>
+
+
+
 <!-- END HEADER -->
 <!-- SIDE NAV-->
 <nav>
@@ -596,6 +639,15 @@
     pointer-events: none;
   }
 </style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="js/jadwalSholat.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 
 </body>
 

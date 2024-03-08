@@ -27,24 +27,65 @@
 </head>
 <body id="homepage">
   <!-- BEGIN PRELOADING -->
-  <div class="preloading" style="display: none;">
+  <div class="preloading">
     <div class="wrap-preload">
       <div class="cssload-loader"></div>
     </div>
   </div>
   <!-- END PRELOADING -->
   <!-- HEADER -->
-  <header id="header" class="header-innerpage">
+  <!-- HEADER -->
+  <!-- HEADER -->
+  <!-- HEADER -->
+  <header id="header">
     <div class="nav-wrapper container">
       <div class="header-menu-button">
-        <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category">
-
-        </a>
+        <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category"></a>
       </div>
       <div class="header-logo">
-        <a href="index.html" class="nav-logo">BAITUL LATIF</a>
+        <a href="#" class="nav-logo">BAITUL LATIF</a>
+        <br>
+        <!-- Jadwal Sholat -->
+        <div class="carousel-inner"> 
+          <div class="card-body">
+              <p style="font-size: 9px;">
+                  <span class="body-text" style=" font-weight: bold;">Jadwal Sholat Jember dan Sekitarnya</span>
+                  <span class="text-muted" id="jadwal-date" style="color: green; font-weight: bold;">LOADING...</span>
+              </p>
+          </div>
       </div>
-
+      
+      
+      
+      <table class="table" style="border-collapse: collapse; width: 100%; border: none; font-size: 9px;">
+        <thead>
+            <tr class="isi-table">
+                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Subuh</th>
+                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none;">Dzuhur</th>
+                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Ashar</th>
+                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none;">Maghrib</th>
+                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Isya</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr class="input-waktu" style="border: none; color: green; font-weight: bold;">
+                <td class="subuh" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
+                <td class="dzuhur" style="padding: 1px; text-align: center;">--:--</td>
+                <td class="ashar" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
+                <td class="maghrib" style="padding: 1px; text-align: center;">--:--</td>
+                <td class="isya" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+    
+    
+    
+              
+        
+          <!-- Jadwal Sholat end -->
+      </div>
     </div>
   </header>
   <!-- END HEADER -->
@@ -149,6 +190,8 @@
   <script src="lib/slick/slick/slick.min.js"></script>
   <!-- Custom script -->
   <script src="js/custom.js"></script>
+  <script src="js/jadwalSholat.js"></script>
+
   <div class="drag-target" data-sidenav="nav-mobile-category" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
   <div class="drag-target" data-sidenav="nav-mobile-account" style="right: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
   <div class="hiddendiv common"></div>
