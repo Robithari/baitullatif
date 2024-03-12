@@ -562,7 +562,13 @@ header {
   left: 0px;
   top: 0px;
   z-index: 5;
-  border-bottom: 0px solid #318bb1; }
+  border-bottom: 0px solid #318bb1;
+  background-color: #ffcf73;
+
+}
+
+
+
 
 header.header-innerpage {
   border-bottom: 1px solid #318bb1; }
@@ -679,7 +685,7 @@ nav a.button-collapse {
 ==================================================*/
 .section.home-category {
   background-color: #ffffff;
-  margin-top: 20px;
+  margin-top: auto;
   margin-bottom: 0px; }
 
 .section.home-category .row.icon-service {
@@ -2114,3 +2120,6 @@ body.page-preview .content-right p {
   color: inherit;
 }
 
+.table, td, th {
+  border: none !important;
+}

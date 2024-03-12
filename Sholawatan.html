@@ -1,67 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google" value="notranslate">
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/sholawatan.css">
-
-    <title>Sholawatan</title>
+  <meta charset="UTF-8">
+  <title>Baitullatif - Informasi</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="lib/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Materialize icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-success">
-        <div class="container">
-            <span class="navbar-brand mb-0 h1" style="color: white;">Sholawat</span>
-        </div>
-    </nav>
-    <!-- End Navbar -->
-
-    <div class="card" onclick="window.location.href='nariyah.html';">
-      <div class="card-body">
-        <h5 class="card-title">1. Sholawat Nariyah</h5>
-        <h6 class="card-subtitle mb-2 text-muted text-end">صلوات جبريل</h6>
-      </div>
-    </div>
-    <div class="card" onclick="window.location.href='jibril.html';">
-      <div class="card-body">
-        <h5 class="card-title">2. Sholawat Jibril</h5>
-        <h6 class="card-subtitle mb-2 text-muted text-end">صلوات جبريل</h6>
-      </div>
-    </div>
-    <div class="card" onclick="window.location.href='tarhim.html';">
-      <div class="card-body">
-        <h5 class="card-title">3. Sholawat Tarhim</h5>
-        <h6 class="card-subtitle mb-2 text-muted text-end">صلوات ترحيم</h6>
-      </div>
-    </div>
-    <div class="card" onclick="window.location.href='Badar.html';">
-      <div class="card-body">
-        <h5 class="card-title">4. Sholawat Badar</h5>
-        <h6 class="card-subtitle mb-2 text-muted text-end">صلوات بدر        </h6>
-      </div>
-    </div>
-    <!-- cadangan
-    <div class="card" onclick="window.location.href='burdah.html';">
-      <div class="card-body">
-        <h5 class="card-title">5. Sholawat Burdah</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">6. Sholawat Tijani</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-      </div>
+<body id="homepage">
+  <!-- BEGIN PRELOADING -->
+  <div class="preloading">
+    <div class="wrap-preload">
+      <div class="cssload-loader"></div>
     </div>
   </div>
- -->
+  <!-- END PRELOADING -->
+  <!-- HEADER -->
+  <!-- HEADER -->
+  <!-- HEADER -->
+  <!-- HEADER -->
+  <header id="header">
+    <div class="nav-wrapper container">
+      <div class="header-menu-button">
+        <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category"></a>
+      </div>
+      <div class="header-logo">
+        <a href="index.html" class="nav-logo">BAITUL LATIF</a>
+        <br>
+        <!-- Jadwal Sholat -->
+        <div class="carousel-inner"> 
+          <div class="card-body">
+              <p style="font-size: 9px;">
+                  <span class="body-text" style=" font-weight: bold;">Jadwal Sholat Jember dan Sekitarnya</span>
+                  <span class="text-muted" id="jadwal-date" style="color: green; font-weight: bold;">LOADING...</span>
+              </p>
+          </div>
+      </div>
+      
+      
+      
+      <table class="table" style="border-collapse: collapse; width: 100%; border: none; font-size: 9px;">
+        <thead>
+            <tr class="isi-table">
+                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Subuh</th>
+                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none;">Dzuhur</th>
+                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Ashar</th>
+                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none;">Maghrib</th>
+                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Isya</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr class="input-waktu" style="border: none; color: green; font-weight: bold;">
+                <td class="subuh" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
+                <td class="dzuhur" style="padding: 1px; text-align: center;">--:--</td>
+                <td class="ashar" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
+                <td class="maghrib" style="padding: 1px; text-align: center;">--:--</td>
+                <td class="isya" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+    
+    
+    
+              
+        
+          <!-- Jadwal Sholat end -->
+      </div>
+    </div>
+  </header>
+  <!-- SIDE NAV-->
+  <nav>
+    <!-- LEFT SIDENAV-->
+    <ul id="nav-mobile-category" class="side-nav" style="width: 250px; transform: translateX(-100%);">
+      <!-- Left sidenav content -->
+    </ul>
+    <!-- END LEFT SIDENAV-->
+    <!-- RIGHT SIDENAV-->
+    <ul id="nav-mobile-account" class="side-nav right-aligned" style="width: 250px; transform: translateX(100%);">
+      <!-- Right sidenav content -->
+    </ul>
+    <!-- END RIGHT SIDENAV-->
+  </nav>
+  <!-- END SIDENAV-->
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script></body>
+  
+  
+  <!-- Script -->
+  <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <!-- Owl carousel -->
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="lib/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+  <!-- Slick JS -->
+  <script src="lib/slick/slick/slick.min.js"></script>
+  <!-- Custom script -->
+  <script src="js/custom.js"></script>
+  <script src="js/jadwalSholat.js"></script>
+
+  <div class="drag-target" data-sidenav="nav-mobile-category" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+  <div class="drag-target" data-sidenav="nav-mobile-account" style="right: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+  <div class="hiddendiv common"></div>
+
+  <style>
+    .d-grid-gap {
+      text-align: center; /* Mengatur posisi horizontal ke kiri */
+    }
+    .d-grid-gap button {
+      margin-bottom: 10px; /* Mengatur jarak antara tombol */
+      width: 80%; /* Menetapkan lebar tombol menjadi 100% */
+      height: 50px; /* Menetapkan tinggi tombol */
+    }
+    .d-grid-gap p {
+      margin-top: 1%;
+      margin-bottom: -1.5%; /* Mengatur jarak antara paragraf */
+    }
+    .d-grid-gap .text-muted {
+      font-size: 20px; /* Mengatur ukuran huruf untuk teks dengan kelas text-muted */
+    }
+  </style>
+  
+  <div class="d-grid gap-2 col-6 mx-auto d-grid-gap">
+    <button class="btn btn-primary" type="button" onclick="window.location.href='nariyah.html';">
+      <p>Sholawat Nariyah</p>
+      <small class="text-muted">صلوات جبريل</small>
+    </button>
+    <button class="btn btn-primary" type="button" onclick="window.location.href='jibril.html';">
+      <p>Sholawat Jibril</p>
+      <small class="text-muted">صلوات جبريل</small>
+    </button>
+    <button class="btn btn-primary" type="button" onclick="window.location.href='tarhim.html';">
+      <p>Sholawat Tarhim</p>
+      <small class="text-muted">صلوات ترحيم</small>
+    </button>
+    <button class="btn btn-primary" type="button" onclick="window.location.href='Badar.html';">
+      <p>Sholawat Badar</p>
+      <small class="text-muted">صلوات بدر</small>
+    </button>
+  </div>
+
+  
+</body>
 </html>
