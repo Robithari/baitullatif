@@ -210,7 +210,9 @@ img {
 
 #page-content {
   padding: 0px 0px;
-  min-height: calc( 100vh - 56px - 192px - 112px ); }
+  min-height: calc( 100vh - 56px - 192px - 112px );
+  margin-top: -5%;
+ }
 
 .row-no-margin {
   margin-bottom: 0px; }
@@ -2122,4 +2124,33 @@ body.page-preview .content-right p {
 
 .table, td, th {
   border: none !important;
+}
+
+
+
+
+.latin-text italic {
+  opacity: 0.1; /* Ubah nilai opacity sesuai dengan kebutuhan Anda (0 = transparan, 1 = tidak transparan) */
+  color: #d46016;
+}
+
+/* CSS */
+.latin-text.italic {
+  opacity: 0.8; /* Ubah nilai opacity sesuai dengan kebutuhan Anda (0 = transparan, 1 = tidak transparan) */
+  color: green;
+}
+
+
+
+
+
+h1 {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  text-decoration: underline;
+  font-style: normal;
+  font-size: 40px; /* Anda dapat mengganti angka 24px dengan ukuran yang Anda inginkan */
+  color: #4099ff; /* Anda dapat mengganti nilai #FF0000 dengan kode
+
+
 }

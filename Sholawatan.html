@@ -24,6 +24,12 @@
   <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
   <!-- Magnific Popup core CSS file -->
   <link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
 </head>
 <body id="homepage">
   <!-- BEGIN PRELOADING -->
@@ -33,9 +39,7 @@
     </div>
   </div>
   <!-- END PRELOADING -->
-  <!-- HEADER -->
-  <!-- HEADER -->
-  <!-- HEADER -->
+
   <!-- HEADER -->
   <header id="header">
     <div class="nav-wrapper container">
@@ -48,43 +52,35 @@
         <!-- Jadwal Sholat -->
         <div class="carousel-inner"> 
           <div class="card-body">
-              <p style="font-size: 9px;">
-                  <span class="body-text" style=" font-weight: bold;">Jadwal Sholat Jember dan Sekitarnya</span>
-                  <span class="text-muted" id="jadwal-date" style="color: green; font-weight: bold;">LOADING...</span>
-              </p>
+            <p style="font-size: 9px;">
+              <span class="body-text" style=" font-weight: bold;">Jadwal Sholat Jember dan Sekitarnya</span>
+              <span class="text-muted" id="jadwal-date" style="color: green; font-weight: bold;">LOADING...</span>
+            </p>
           </div>
-      </div>
-      
-      
-      
-      <table class="table" style="border-collapse: collapse; width: 100%; border: none; font-size: 9px;">
-        <thead>
+        </div>
+
+        <!-- Jadwal Sholat -->
+        <table class="table" style="border-collapse: collapse; width: 100%; border: none; font-size: 9px;">
+          <thead>
             <tr class="isi-table">
-                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Subuh</th>
-                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none;">Dzuhur</th>
-                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Ashar</th>
-                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none;">Maghrib</th>
-                <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Isya</th>
+              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Subuh</th>
+              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none;">Dzuhur</th>
+              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Ashar</th>
+              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none;">Maghrib</th>
+              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Isya</th>
             </tr>
-        </thead>
-        <tbody>
-          <tr class="input-waktu" style="border: none; color: green; font-weight: bold;">
-                <td class="subuh" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
-                <td class="dzuhur" style="padding: 1px; text-align: center;">--:--</td>
-                <td class="ashar" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
-                <td class="maghrib" style="padding: 1px; text-align: center;">--:--</td>
-                <td class="isya" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
+          </thead>
+          <tbody>
+            <tr class="input-waktu" style="border: none; color: green; font-weight: bold;">
+              <td class="subuh" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
+              <td class="dzuhur" style="padding: 1px; text-align: center;">--:--</td>
+              <td class="ashar" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
+              <td class="maghrib" style="padding: 1px; text-align: center;">--:--</td>
+              <td class="isya" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
             </tr>
-        </tbody>
-    </table>
-    
-    
-    
-    
-    
-              
-        
-          <!-- Jadwal Sholat end -->
+          </tbody>
+        </table>
+        <!-- Jadwal Sholat end -->
       </div>
     </div>
   </header>
@@ -129,9 +125,18 @@
     }
     .d-grid-gap button {
       margin-bottom: 10px; /* Mengatur jarak antara tombol */
+      width: 60%; /* Menetapkan lebar tombol menjadi 100% */
+      height: 50px; /* Menetapkan tinggi tombol */
+    }
+
+
+    .baru button {
+      margin-bottom: 20px; /* Mengatur jarak antara tombol */
       width: 80%; /* Menetapkan lebar tombol menjadi 100% */
       height: 50px; /* Menetapkan tinggi tombol */
     }
+
+
     .d-grid-gap p {
       margin-top: 1%;
       margin-bottom: -1.5%; /* Mengatur jarak antara paragraf */
@@ -140,6 +145,14 @@
       font-size: 20px; /* Mengatur ukuran huruf untuk teks dengan kelas text-muted */
     }
   </style>
+
+
+<div class="baru gap-2 col-6 mx-auto d-grid-gap">
+
+    <h1><u>SHOLAWATAN</u></h1>
+
+
+</div>
   
   <div class="d-grid gap-2 col-6 mx-auto d-grid-gap">
     <button class="btn btn-primary" type="button" onclick="window.location.href='nariyah.html';">
