@@ -2711,9 +2711,6 @@ table.centered thead tr th,table.centered tbody tr td {
     text-align: center
 }
 
-thead {
-    border-bottom: 1px solid #d0d0d0
-}
 
 td,th {
     padding: 15px 5px;

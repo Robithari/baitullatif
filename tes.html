@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Sholat Hari Ini</title>
+</head>
+<body>
+    <div id="jadwal-sholat">
+        <h2>Jadwal Sholat Hari Ini</h2>
+        <p>Tanggal: <span id="jadwal-date"></span></p>
+        <ul>
+            <li>Subuh: <span class="subuh"></span></li>
+            <li>Dzuhur: <span class="dzuhur"></span></li>
+            <li>Ashar: <span class="ashar"></span></li>
+            <li>Maghrib: <span class="maghrib"></span></li>
+            <li>Isya: <span class="isya"></span></li>
+        </ul>
+        <p>Waktu sekarang: <span id="waktu-sekarang"></span></p>
+        <p id="menuju-waktu"></p>
+    </div>
+
+    <script>
+function updateWaktuSekarang() {
+    const waktuSekarang = new Date();
+    const jam = String(waktuSekarang.getHours()).padStart(2, '0');
+    const menit = String(waktuSekarang.getMinutes()).padStart(2, '0');
+    const detik = String(waktuSekarang.getSeconds()).padStart(2, '0');
+    document.querySelector('#waktu-sekarang').textContent = `${jam}:${menit}:${detik}`;
+}
+
+function hitungWaktuMundur(jadwal) {
+    const waktuSekarang = new Date();
+    const waktuSholat = [
+        { nama: 'Subuh', waktu: jadwal.subuh },
+        { nama: 'Dzuhur', waktu: jadwal.dzuhur },
+        { nama: 'Ashar', waktu: jadwal.ashar },
+        { nama: 'Maghrib', waktu: jadwal.maghrib },
+        { nama: 'Isya', waktu: jadwal.isya }
+    ];
+
+    let waktuTerdekat = null;
+    let selisihWaktuTerdekat = Infinity;
+
+    // Temukan waktu sholat terdekat
+    waktuSholat.forEach(sholat => {
+        const waktuSholat = new Date(`${jadwal.tanggal} ${sholat.waktu}`);
+        const selisih = waktuSholat - waktuSekarang;
+        if (selisih > 0 && selisih < selisihWaktuTerdekat) {
+            waktuTerdekat = sholat;
+            selisihWaktuTerdekat = selisih;
+        }
+    });
+
+    if (waktuTerdekat) {
+        const jam = Math.floor(selisihWaktuTerdekat / (1000 * 60 * 60));
+        const menit = Math.floor((selisihWaktuTerdekat % (1000 * 60 * 60)) / (1000 * 60));
+        const detik = Math.floor((selisihWaktuTerdekat % (1000 * 60)) / 1000);
+
+        document.querySelector('#menuju-waktu').textContent = `Menuju Waktu ${waktuTerdekat.nama} ${jam} jam ${menit} menit ${detik} detik`;
+    }
+}
+
+function updateWaktuSholat(jadwal) {
+    document.querySelector('.subuh').textContent = jadwal.subuh;
+    document.querySelector('.dzuhur').textContent = jadwal.dzuhur;
+    document.querySelector('.ashar').textContent = jadwal.ashar;
+    document.querySelector('.maghrib').textContent = jadwal.maghrib;
+    document.querySelector('.isya').textContent = jadwal.isya;
+
+    // Hitung waktu mundur untuk waktu sholat terdekat
+    hitungWaktuMundur(jadwal);
+}
+
+function getJadwalSholat() {
+    const tanggal = new Date();
+    const getYear = tanggal.getFullYear();
+    const getMonth = tanggal.getMonth() + 1;
+    const getDay = tanggal.getDate();
+
+    fetch(`https://api.myquran.com/v2/sholat/jadwal/1607/${getYear}/${getMonth}/${getDay}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Response not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const jadwal = data.data.jadwal;
+            document.querySelector('#jadwal-date').textContent = jadwal.tanggal;
+            updateWaktuSholat(jadwal);
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+}
+
+getJadwalSholat();
+
+// Memperbarui waktu setiap detik
+setInterval(updateWaktuSekarang, 1000);
+
+    </script>
+</body>
+</html>

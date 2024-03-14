@@ -557,12 +557,12 @@ nav .side-nav .profile h6 {
 4. HEADER
 ==================================================*/
 header {
-  height: 100px;
+  height: 115px;
   background-color: #ffffff;
   position: fixed;
   width: 100%;
   left: 0px;
-  top: 0px;
+  top: -1.6%;
   z-index: 5;
   border-bottom: 0px solid #318bb1;
   background-color: #ffcf73;
@@ -613,12 +613,13 @@ header .header-icon-menu .fas.fa-shopping-cart {
   font-size: 18px;
   padding: 19px 13px; }
 
-header .header-logo {
-  text-align: center;
-  line-height: normal;
-  width: 100%;
-  position: absolute;
-  left: 0px; }
+  header .header-logo {
+    text-align: center;
+    line-height: normal;
+    width: 100%;
+
+}
+
 
 header .nav-logo {
   color: #318bb1;
@@ -2149,8 +2150,36 @@ h1 {
   font-optical-sizing: auto;
   text-decoration: underline;
   font-style: normal;
-  font-size: 40px; /* Anda dapat mengganti angka 24px dengan ukuran yang Anda inginkan */
-  color: #4099ff; /* Anda dapat mengganti nilai #FF0000 dengan kode
+  font-size: 40px; /* Anda dapat mengganti angka 40px dengan ukuran yang Anda inginkan */
+  color: #4099ff; /* Anda dapat mengganti nilai #4099ff dengan kode warna yang Anda inginkan */
+}
 
 
+
+
+#menuju-waktu-sholat {
+  float: left; /* Mengatur elemen berada di sebelah kiri halaman */
+  border: 0.3px solid #333; /* Warna dan ketebalan border */
+  padding-top: 0; /* Tidak ada padding di atas */
+  padding-bottom: 0; /* Tidak ada padding di bawah */
+  padding-left: 1.3px; /* Menambahkan padding horizontal */
+  border-radius: 5px; /* Menambahkan sudut pada border */
+  width: 62%; /* Lebar 50% dari lebar halaman */
+  box-sizing: border-box; /* Border dan padding dimasukkan dalam hitungan ukuran */
+  font-size: 10px;
+  text-align: left; /* Mengatur teks ke kiri */
+  background-color: #f6f6f6;
+}
+
+
+.table-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 80%; /* Lebar tabel */
+  font-size: 9px;
 }
