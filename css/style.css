@@ -2164,7 +2164,7 @@ h1 {
   padding-bottom: 0; /* Tidak ada padding di bawah */
   padding-left: 1.3px; /* Menambahkan padding horizontal */
   border-radius: 5px; /* Menambahkan sudut pada border */
-  width: 62%; /* Lebar 50% dari lebar halaman */
+  width: 75%; /* Lebar 50% dari lebar halaman */
   box-sizing: border-box; /* Border dan padding dimasukkan dalam hitungan ukuran */
   font-size: 10px;
   text-align: left; /* Mengatur teks ke kiri */
