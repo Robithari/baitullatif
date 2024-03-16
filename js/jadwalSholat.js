@@ -25,7 +25,9 @@ function updateWaktuSholat(jadwal) {
         const jam = Math.floor(sisaDetik / 3600);
         const menit = Math.floor((sisaDetik % 3600) / 60);
         const detik = sisaDetik % 60;
-        document.getElementById('menuju-waktu-sholat').textContent = `Menuju Waktu ${waktuSholatBerikutnya}: ${jam} jam ${menit} menit ${detik} detik`;
+        const waktuFormat = `${jam.toString().padStart(2, '0')}:${menit.toString().padStart(2, '0')}:${detik.toString().padStart(2, '0')}`;
+        const waktuSholatNama = waktuSholatBerikutnya.charAt(0).toUpperCase() + waktuSholatBerikutnya.slice(1);
+        document.getElementById('menuju-waktu-sholat').textContent = `Menuju Waktu ${waktuSholatNama} ${waktuFormat}`; // Menghapus titik dua setelah nama waktu sholat
     } else {
         document.getElementById('menuju-waktu-sholat').textContent = 'Sudah lewat waktu sholat hari ini';
     }

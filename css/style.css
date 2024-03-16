@@ -2156,20 +2156,20 @@ h1 {
 
 
 
-
 #menuju-waktu-sholat {
-  float: left; /* Mengatur elemen berada di sebelah kiri halaman */
-  border: 0.3px solid #333; /* Warna dan ketebalan border */
-  padding-top: 0; /* Tidak ada padding di atas */
-  padding-bottom: 0; /* Tidak ada padding di bawah */
-  padding-left: 1.3px; /* Menambahkan padding horizontal */
-  border-radius: 5px; /* Menambahkan sudut pada border */
-  width: 75%; /* Lebar 50% dari lebar halaman */
-  box-sizing: border-box; /* Border dan padding dimasukkan dalam hitungan ukuran */
-  font-size: 10px;
-  text-align: left; /* Mengatur teks ke kiri */
-  background-color: #f6f6f6;
+    margin-left: 25%;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 11px;
+    text-align: left;
+    font-weight: bold;
+    color: green;
 }
+
+
 
 
 .table-container {
