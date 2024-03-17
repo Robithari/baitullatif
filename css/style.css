@@ -2154,20 +2154,28 @@ h1 {
   color: #4099ff; /* Anda dapat mengganti nilai #4099ff dengan kode warna yang Anda inginkan */
 }
 
+.container.waktu {
+  display: flex;
+  justify-content: center; /* Mengatur posisi horizontal center */
+  height: 100vh; /* Menyesuaikan tinggi div sesuai tinggi layar */
+  
+}
 
 
 #menuju-waktu-sholat {
-    margin-left: 25%;
     margin-right: auto;
     padding-top: 0;
     padding-bottom: 0;
-    border-radius: 5px;
     width: 100%;
-    font-size: 11px;
-    text-align: left;
+    font-size: 10px;
+    text-align: center;
     font-weight: bold;
-    color: green;
-}
+    color: white;
+    background-color: green;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    }
 
 
 
@@ -2182,4 +2190,12 @@ h1 {
   border-collapse: collapse;
   width: 80%; /* Lebar tabel */
   font-size: 9px;
+}
+
+
+.beground {
+  background-color: #f6f6f6; /* Warna background cream */
+  padding: 0.5px; /* Padding untuk konten di dalamnya */
+  border-radius: 10px; /* Melengkungkan sudut border */
+
 }
