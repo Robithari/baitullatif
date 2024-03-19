@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Baitul Latif</title> 
+
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,13 +20,14 @@
 <!-- Owl carousel -->
 <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/jadwalpiket.css">
-
 <!-- Slick CSS -->
 <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css">
 <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
 <!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
+
+
+
 </head>
 <body id="homepage">
 <!-- BEGIN PRELOADING -->
@@ -103,119 +105,23 @@
   </nav>
   <!-- END SIDENAV-->
 
-  <div class="container-table">
-<table class="blueTable">
-    <thead>
-    <tr>
-    <th>NO.</th>
-    <th>HARI</th>
-    <th>TANGGAL</th>
-    <th>NAMA</th>
-    <th>KETERANGAN</th>
-    </tr>
-    </thead>
-    <tfoot>
-    <tr>
-    <td colspan="5">
-    <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
-    </td>
-    </tr>
-    </tfoot>
-    <tbody>
-    <tr>
-    <td>1</td>
-    <td>SENIN</td>
-    <td>18-03-2024</td>
-    <td>BPK. ROBITH</td>
-    <td>cell5_1</td>
-    </tr>
-    <tr>
-    <td>2</td>
-    <td>SENIN</td>
-    <td>18-03-2024</td>
-    <td>BPK. TIYOK</td>
-    <td>cell5_2</td>
-    </tr>
-    <tr>
-    <td>3</td>
-    <td>SELASA</td>
-    <td>19-03-2024</td>
-    <td>BPK. KHOIRUL</td>
-    <td>cell5_3</td>
-    </tr>
-    <tr>
-    <td>4</td>
-    <td>SELASA</td>
-    <td>19-03-2024</td>
-    <td>BPK. FAHMI</td>
-    <td>cell5_4</td>
-    </tr>
-    <tr>
-    <td>5</td>
-    <td>RABU</td>
-    <td>20-03-2024</td>
-    <td>BPK. BASUKI</td>
-    <td>cell5_5</td>
-    </tr>
-    <tr>
-    <td>6</td>
-    <td>RABU</td>
-    <td>20-03-2024</td>
-    <td>BPK. IMAM</td>
-    <td>cell5_6</td>
-    </tr>
-    <tr>
-    <td>7</td>
-    <td>KAMIS</td>
-    <td>21-03-2024</td>
-    <td>BPK. GILANG</td>
-    <td>cell5_7</td>
-    </tr>
-    <tr>
-    <td>8</td>
-    <td>KAMIS</td>
-    <td>21-03-2024</td>
-    <td>BPK. TRIONO</td>
-    <td>cell5_8</td>
-    </tr>
-    <tr>
-    <td>9</td>
-    <td>JUMAT</td>
-    <td>22-03-2024</td>
-    <td>BPK. ROHMAN</td>
-    <td>cell5_9</td>
-    </tr>
-    <tr>
-    <td>10</td>
-    <td>JUMAT</td>
-    <td>22-03-2024</td>
-    <td>BPK. PUNGKI</td>
-    <td>cell5_10</td>
-    </tr>
-    <tr>
-    <td>11</td>
-    <td>SABTU</td>
-    <td>23-03-2024</td>
-    <td>BPK. ANTOK</td>
-    <td>cell5_11</td>
-    </tr>
-    <tr>
-    <td>12</td>
-    <td>SABTU</td>
-    <td>23-03-2024</td>
-    <td>BPK. HORI</td>
-    <td>cell5_12</td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>SABTU</td>
-        <td>23-03-2024</td>
-        <td>BPK. HORI</td>
-        <td>cell5_12</td>
-        </tr>
-    </tbody>
-    </table>
+  <div class="image-container">
+    <img src="img/daftarpiket.jpg" alt="Image" id="image" onclick="openImage()">
 </div>
+
+<script>
+    function openImage() {
+        // Redirect to a separate page with the full-size image
+        window.location.href = "img/daftarpiket.jpg";
+    }
+</script>
+
+    <!-- catatan -->
+    <div class="catatan"  font-size: 12px;">
+        <h4 style="text-align: left; font-size: 12px;padding: 10px;">Catatan: <br>Harap datang maksimal 20 menit sebelum Adzan Isya dikumandangkan</h4>
+      </div>
+      
+
 
 
 
@@ -251,6 +157,20 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+<!-- Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="lib/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+<script>
+  // Inisialisasi Magnific Popup pada gambar dengan kelas .image-link
+  $('.image-link').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true // Aktifkan mode galeri untuk multiple images
+    }
+  });
+</script>
 
 
 </body>
