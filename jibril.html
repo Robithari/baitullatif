@@ -1,84 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Baitullatif - Informasi</title> 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-touch-fullscreen" content="yes">
-  <meta name="HandheldFriendly" content="True">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- CSS -->
-  <link rel="stylesheet" href="lib/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
-  <link rel="stylesheet" href="css/materialize.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Materialize icon -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Owl carousel -->
-  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
-  <!-- Slick CSS -->
-  <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
-  <!-- Magnific Popup core CSS file -->
-  <link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
+<meta charset="UTF-8">
+<title>Baitul Latif</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="HandheldFriendly" content="True">
+<link rel="icon" href="img/70x70.jpg" type="image/x-icon">
+<!-- CSS -->
+<link rel="stylesheet" href="lib/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
+<link rel="stylesheet" href="css/materialize.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- materialize icon -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Owl carousel -->
+<link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
+<!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
 </head>
 <body id="homepage">
-  <!-- BEGIN PRELOADING -->
-  <div class="preloading">
-    <div class="wrap-preload">
-      <div class="cssload-loader"></div>
+<!-- BEGIN PRELOADING -->
+<div class="preloading">
+  <div class="wrap-preload">
+    <div class="cssload-loader"></div>
+  </div>
+</div>
+<!-- END PRELOADING -->
+<!-- HEADER -->
+<header id="header">
+  <div class="nav-wrapper container">
+    <div class="header-menu-button">
+      <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category"></a>
+    </div>
+    <div class="header-logo">
+      <a href="#" class="nav-logo">MUSHOLAH BAITUL LATIF</a>
+
+      <div class="beground">
+      <!-- Jadwal Sholat -->
+      <div class="carousel-inner"> 
+        <div class="card-body">
+            <span class="body-text" style="font-weight: bold; font-size: 10px;">Jadwal Sholat Jember dan Sekitarnya</span>
+            <span class="text-muted" id="jadwal-date" style="color: green; font-size: 10px; font-weight: bold;">LOADING...</span>
+          <hr style="  height: 1px; /* Ubah nilai sesuai dengan kebutuhan Anda */
+          background-color: black; /* Warna garis horizontal */
+          border: none; /* Hapus border default */
+          margin: 0px 0; /* Atur margin atas dan bawah */">
+        </div>
+      </div>
+      <table class="table" style="border-collapse: collapse; width: 100%; border: none; font-size: 9px;">
+        <thead>
+          <tr class="isi-table">
+            <th scope="col" style="padding: 1px; text-align: center; border: none;">Imsak</th>
+            <th scope="col" style="padding: 1px; text-align: center; border: none;">Subuh</th>
+            <th scope="col" style="padding: 1px; text-align: center; border: none;">Dzuhur</th>
+            <th scope="col" style="padding: 1px; text-align: center; border: none;">Ashar</th>
+            <th scope="col" style="padding: 1px; text-align: center; border: none;">Maghrib</th>
+            <th scope="col" style="padding: 1px; text-align: center; border: none;">Isya</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="input-waktu" style="border: none; color: green; font-weight: bold;">
+            <td class="imsak" style="padding: 1px; text-align: center; border: none;">--:--</td>
+            <td class="subuh" style="padding: 1px; text-align: center; border: none;">--:--</td>
+            <td class="dzuhur" style="padding: 1px; text-align: center; border: none;">--:--</td>
+            <td class="ashar" style="padding: 1px; text-align: center; border: none;">--:--</td>
+            <td class="maghrib" style="padding: 1px; text-align: center; border: none;">--:--</td>
+            <td class="isya" style="padding: 1px; text-align: center; border: none;">--:--</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Jadwal Sholat end -->
+      <!-- menuju waktu sholat -->
+        <div id="menuju-waktu-sholat">Konten Anda di sini</div>
+    </div>
+
+      <!-- menuju waktu sholat end -->
     </div>
   </div>
-  <!-- END PRELOADING -->
-
-  <!-- HEADER -->
-  <header id="header">
-    <div class="nav-wrapper container">
-      <div class="header-menu-button">
-        <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category"></a>
-      </div>
-      <div class="header-logo">
-        <a href="index.html" class="nav-logo">BAITUL LATIF</a>
-        <br>
-        <!-- Jadwal Sholat -->
-        <div class="carousel-inner"> 
-          <div class="card-body">
-            <p style="font-size: 9px;">
-              <span class="body-text" style=" font-weight: bold;">Jadwal Sholat Jember dan Sekitarnya</span>
-              <span class="text-muted" id="jadwal-date" style="color: green; font-weight: bold;">LOADING...</span>
-            </p>
-          </div>
-        </div>
-
-        <!-- Jadwal Sholat -->
-        <table class="table" style="border-collapse: collapse; width: 100%; border: none; font-size: 9px;">
-          <thead>
-            <tr class="isi-table">
-              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Subuh</th>
-              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none;">Dzuhur</th>
-              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Ashar</th>
-              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none;">Maghrib</th>
-              <th scope="col" style="width: 20%; padding: 1px; text-align: center; border: none; background-color: rgba(128, 128, 128, 0.5);">Isya</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="input-waktu" style="border: none; color: green; font-weight: bold;">
-              <td class="subuh" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
-              <td class="dzuhur" style="padding: 1px; text-align: center;">--:--</td>
-              <td class="ashar" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
-              <td class="maghrib" style="padding: 1px; text-align: center;">--:--</td>
-              <td class="isya" style="padding: 1px; text-align: center; background-color: rgba(128, 128, 128, 0.5);">--:--</td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- Jadwal Sholat end -->
-      </div>
-    </div>
-  </header>
-  <!-- END HEADER -->
+</header>
+<!-- HEADER end -->
   <!-- END HEADER -->
   <!-- SIDE NAV-->
   <nav>
