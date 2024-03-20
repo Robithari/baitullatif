@@ -692,7 +692,7 @@ nav a.button-collapse {
 ==================================================*/
 .section.home-category {
   background-color: #ffffff;
-  margin-top: -10px;
+  margin-top: auto;
   margin-bottom: 0px; }
 
 .section.home-category .row.icon-service {
