@@ -1,0 +1,525 @@
+.header {
+    width: 100%;
+    background: -moz-linear-gradient(90deg, rgba(1, 10, 0, 1) 0%, rgba(11, 121, 9, 1) 50%, rgba(1, 10, 0, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(1, 10, 0, 1) 0%, rgba(11, 121, 9, 1) 50%, rgba(1, 10, 0, 1) 100%);
+    background: linear-gradient(90deg, rgba(1, 10, 0, 1) 0%, rgba(11, 121, 9, 1) 50%, rgba(1, 10, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010a00", endColorstr="#010a00", GradientType=1);
+    text-align: center;
+    border-radius: 0 0 80% 80% / 0px;
+    position: relative;
+  }
+  
+
+  
+  .col-header {
+      width: 10%;
+  
+  }
+  #title-header {
+    color: white;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  
+  #background {
+    margin-top: -200px;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: -1;
+  }
+  
+   .card-body {
+    margin-top: -1%;
+    text-align: center;
+   color: black;
+    font-weight: bold;
+  
+    font-size: 100%;
+  }
+  
+  
+  .card-text {
+  
+   color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  }
+  .body-text  {
+     margin-top: 1%;
+  }
+  
+  .text-muted {
+    font-size: 90%;
+    width: auto;
+    color: red; /* Ganti dengan warna font yang Anda inginkan, misalnya "red" untuk merah */
+    height: -300px;
+    margin-top: -6%;
+    font-weight: bold;
+    text-align: center;
+      position: relative;
+  }
+  
+  .table {
+    width: 85%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 0%;
+    
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.5% 15px;
+    border: 1.5px solid black;
+    text-align: center;
+    font-size: 80%;
+      position: relative;
+  }
+  
+  .table th {
+    background-color: #207e33;
+  }
+  
+  .isi-table th {
+    padding: 5px;
+    color: white;
+  }
+  
+  .input-waktu {
+    font-weight: bold;
+  }
+      
+  .content {
+    width: 85%;
+    height: 150px;
+  
+    border-radius: 10px;
+     margin: auto;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+  }
+  
+  .content2 {
+    width: 85%;
+    height: 150px;
+  
+    border-radius: 10px;
+     margin: auto;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    margin-top: 0%;
+  }
+  
+  .box {
+    background: rgb(63, 125, 83);
+    background: linear-gradient(324deg, rgba(255, 254, 254, 1) 0%, rgba(0, 100, 0, 1) 31%);
+    border-radius: 7px;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Efek transisi saat transformasi */
+    transform: scale(1.1); /* Perbesar ukuran ikon saat dihover */
+    transition: opacity 0.2s; /* Animasi perubahan opasitas */
+  
+  }
+  
+  .box.clicked {
+    opacity: 0.7; /* Opasitas menjadi 70% ketika diklik */
+  }
+  
+  
+  .box img{
+    width: 80%;
+    height: 80%;
+    margin: 9%;
+  }
+  
+  
+  
+  #row2 {
+    margin-top: -3%;
+  
+  }
+  
+  #row3 {
+    margin-top: 50%;
+  
+  }
+  
+  p {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  
+  
+  }
+  
+  #title1 {
+    margin-left: 0%;
+    margin-top: 3%;
+  }
+  
+  #title2 {
+    margin-left: 0%;
+      margin-top: 3%;
+  }
+  
+  #title3 {
+    margin-left: 0%;
+    margin-top: 3%;
+  }
+  
+  #title4 {
+    margin-left: 0%;
+    margin-top: 3%;
+  }
+  
+  #title5 {
+    margin-left: 0%;
+    margin-top: 3%;
+  }
+  
+  #title6 {
+    margin-left: 0%;
+    margin-top: 3%;
+  }
+  
+  #title7 {
+    margin-left: 0%;
+    margin-top: 3%;
+  }
+  
+  #title8 {
+    margin-left: 0%;
+    margin-top: 3%;
+  }
+  
+  #title9 {
+    margin-left: 0%;
+    margin-top: 3%;
+  }
+  
+  #title10 {
+    margin-left: 0px;
+    margin-top: 3%;
+  }
+  
+  #title11 {
+    margin-left: 32px;
+        margin-top: 3%;
+  }
+  
+  #title12 {
+    margin-left: 24px;
+    margin-top: 3%;
+  }
+  
+  .footer {
+    width: 100%;
+    height: 110px;
+  
+    text-align: center;
+    margin-top: -10px;
+    border-radius: 80% 80% 0 0 / 50px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #title-footer {
+    color: black;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+  }
+  
+  #sosmed {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 17px;
+    margin-top: 5px;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  #logo {
+    max-width: 30%;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .container-footer {
+    background-color: green;
+    width: 100%;
+    height: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .h1-footer {
+    color: white;
+    margin-top: 3%;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    animation: marquee 100s linear infinite;
+  }
+  
+  /* Media query untuk mode lanskap */
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto; /* Mengizinkan scroll atas dan bawah */
+    overflow-x: hidden; /* Menghilangkan scroll horizontal */
+      background: white;
+  
+  }
+  
+  
+  /* Styling untuk slideshow */
+  
+  .slideshow-container {
+    max-width: 1000px;
+  margin-top: 3%;
+  position: relative;
+    height: 10rem;
+  
+  }
+  
+  .mySlides {
+  
+  
+  text-align: center;
+  }
+  
+  img {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+      border-radius: 10px;
+  
+  }
+  
+  /* Apply a filter to the box when hovered */
+  .box:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2); /* Increase brightness when hovered */
+  }
+  
+  @media screen and (orientation: landscape) {
+    body {
+      display: none;
+    }
+  }
+  
+  
+    /* Gaya untuk kontainer carousel */
+    .carousel-container {
+      /* Tambahkan gaya yang Anda butuhkan untuk carousel di sini */
+      /* Misalnya, Anda dapat mengatur lebar atau margin untuk carousel */
+      width: 100%;
+      margin-top: -3%;
+    }
+  
+    .carousel-item img {
+      display: block;
+      margin: 0 auto;
+      margin-top: 3%;
+    }
+  
+  /*instal aplikasi  */
+    .install-banner {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .install-banner p {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .install-banner button {
+      margin-top: 5px;
+      padding: 5px 10px;
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+  
+    .install-banner button:hover {
+      background-color: #0056b3;
+    }
+  
+  /* install */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #367bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  * {
+    text-transform: none !important;
+    -webkit-text-transform: none !important; /* Untuk peramban berbasis WebKit, seperti Chrome dan Safari */
+  }
+  
+  
+  #jadwal-date {
+    color: black;
+  }
+  
+  
+  /* news */
+  
+  .section-title {
+    color: #318bb1;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 10px;
+  }
+  
+  .section.list-news .row-list-news .news-item {
+    position: relative;
+    padding: 20px 15px 20px 80px;
+    min-height: 57px;
+    border-bottom: 1px solid #dedede;
+    background-color: #f9f9f9;
+    margin-bottom: 2px; }
+  
+  .section.list-news .row-list-news {
+    margin-bottom: 0px; }
+  
+  .section.list-news .row-list-news .news-item .news-tem-image {
+    width: 50px;
+    position: absolute;
+    left: 15px;
+    top: 20px; }
+  
+  .section.list-news .row-list-news .news-item .news-tem-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; }
+  
+  .section.list-news .row-list-news .news-item .news-item-info .list-news-title {
+  
+    font-weight: 600; }
+  
+  .section.list-news .readmore {
+    background-color: #318bb1;
+    color: #ffffff;
+    padding: 0px 5px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2px;
+    font-size: 12px; }
+  
+  .section.list-news .readmore:hover {
+    background-color: #247ca1; }
+  
+  .section.list-news .more-news-list {
+    text-align: right;
+    margin-top: 10px; }
+  
+  .section.news {
+    padding-bottom: 5px; }
+  
+  #page-content .section.news {
+    padding-bottom: 5px; }
+  
+  #page-content .section.news .news-content {
+    border-bottom: 1px solid #e0e0e0; }
+  
+  #page-content .section.news .news-content img {
+    border-radius: 10px; }
+  
+  .section.news .row.row-title {
+    margin-bottom: 10px; }
+  
+  .section.news .news-content {
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding-bottom: 30px; }
+  
+  .section.news .news-content .news-title {
+    font-weight: 600;
+    color: #318bb1;
+    font-size: 18px;
+    padding: 10px 0px 0px; }
+  
+  .section.news .news-content .news-title a {
+    color: #318bb1; }
+  
+  .section.news .news-content .date {
+    padding: 0px 0px;
+    color: #969696;
+    width: 100%; }
+  
+  .section.news .news-content p {
+    text-align: left; }
+  
+  .section.news .news-content .fa {
+    padding-right: 6px;
+    color: #969696; }
+  
+  .section.news .news-content .readmore-news {
+    width: 100%;
+    padding-top: 10px; }
+  
+  .share-via ul li.sharetext {
+    margin-right: 10px;
+    padding: 10px 0px; }
+  
+  .share-via ul li.s-icon i {
+    color: #318bb1; }
+  
+  .share-via ul li.s-icon a {
+    cursor: pointer; }
+  
+  .share-via ul li.s-icon {
+    margin-right: 5px;
+    font-size: 28px; }
+  
+  .share-via ul li {
+    float: left; }
+    /* news end */
+  
+  
+  
