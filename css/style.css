@@ -732,8 +732,8 @@ nav a.button-collapse {
 }
 
 .section.home-category .icon-service .content {
-  margin-top: 1px; /* Atur jarak border atas */
-  margin-bottom: 1px; /* Atur jarak border bawah */
+  margin-top: -6px; /* Atur jarak border atas */
+  margin-bottom: -6px; /* Atur jarak border bawah */
 }
 
 
