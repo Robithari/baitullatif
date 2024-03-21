@@ -3171,10 +3171,7 @@ nav ul a span.badge {
     margin-right: -.75rem
 }
 
-.section {
-    padding-top: 1rem;
-    padding-bottom: 1rem
-}
+
 
 .section.no-pad {
     padding: 0
@@ -3204,7 +3201,7 @@ nav ul a span.badge {
     float: left;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0 .75rem;
+    padding: 1.3rem;
     min-height: 1px
 }
 
