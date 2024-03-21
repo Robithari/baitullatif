@@ -7702,8 +7702,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .carousel.carousel-slider {
-    top: 0;
-    left: 0
+    margin-top: auto;
 }
 
 .carousel.carousel-slider .carousel-fixed-item {
