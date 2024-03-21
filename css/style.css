@@ -182,13 +182,13 @@ form textarea.materialize-textarea.validate + label {
 body a {
   color: #303030; }
 
-img {
-  max-width: 90%;
-  max-height: 90%;
-  display: block;
-  margin:10px auto 0;
-  border-radius: 10px;
-  }
+  img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin:10px auto 0;
+    border-radius: 10px;
+    }
 
 .clear {
   clear: both; }
