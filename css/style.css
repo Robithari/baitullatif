@@ -707,7 +707,7 @@ nav a.button-collapse {
     width: 100%; /* Lebar elemen adalah 100% dari lebar elemen induk */
     position: relative; /* Menetapkan posisi relatif terhadap posisi normal */
     margin-bottom: 20px; /* Margin bawah sebesar 20 piksel */
-    border-radius: 10px; /* Memberikan sudut bulat dengan radius 10 piksel */
+    border-radius: 80px; /* Memberikan sudut bulat dengan radius 10 piksel */
     -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.1); /* Bayangan untuk browser WebKit */
     -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.1); /* Bayangan untuk browser Mozilla */
     box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.1); /* Bayangan umum */
@@ -727,7 +727,7 @@ nav a.button-collapse {
     text-align: center;
     vertical-align: middle;
     padding: 1px;
-    background: rgb(254, 216, 216);
+    background: rgb(140, 244, 139);
     border-radius: 30px;
 }
 
