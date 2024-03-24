@@ -182,13 +182,13 @@ form textarea.materialize-textarea.validate + label {
 body a {
   color: #303030; }
 
-img {
-  max-width: 80%;
-  max-height: 80%;
-  display: block;
-  margin:10px auto 0;
-  border-radius: 10px;
-  }
+  img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin:10px auto 0;
+    border-radius: 10px;
+    }
 
 .clear {
   clear: both; }
@@ -698,19 +698,21 @@ nav a.button-collapse {
 .section.home-category .row.icon-service {
   margin-bottom: 0px; }
 
-.section.home-category .content {
-  cursor: pointer;
-  border: 0px solid #d1d1d1;
-  text-align: center;
-  padding-bottom: 100%;
-  height: 0px;
-  width: 100%;
-  position: relative;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.1);
-  -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.1);
-  box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.1); }
+  .section.home-category .content {
+    cursor: pointer; /* Mengubah kursor menjadi tanda panah saat diarahkan */
+    border: 0px solid #d1d1d1; /* Tidak ada garis batas dengan warna #d1d1d1 */
+    text-align: center; /* Meratakan teks ke tengah */
+    padding-bottom: 100%; /* Padding sebesar 100% dari lebar elemen induk */
+    height: 0px; /* Tinggi elemen diatur menjadi 0 piksel */
+    width: 100%; /* Lebar elemen adalah 100% dari lebar elemen induk */
+    position: relative; /* Menetapkan posisi relatif terhadap posisi normal */
+    margin-bottom: 20px; /* Margin bawah sebesar 20 piksel */
+    border-radius: 80px; /* Memberikan sudut bulat dengan radius 10 piksel */
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.1); /* Bayangan untuk browser WebKit */
+    -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.1); /* Bayangan untuk browser Mozilla */
+    box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.1); /* Bayangan umum */
+  } 
+  
 
 
 
@@ -724,14 +726,21 @@ nav a.button-collapse {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    padding: 15px;
-  }
-  
+    padding: 1px;
+    background: rgb(140, 244, 139);
+    border-radius: 30px;
+}
+
+.section.home-category .icon-service .content {
+  margin-top: -6px; /* Atur jarak border atas */
+  margin-bottom: -6px; /* Atur jarak border bawah */
+}
+
 
 
   
   .section.home-category .content .in-content .in-in-content img {
-    width: 60%;
+    width: 65%;
     height: auto;
   }
   
@@ -2203,4 +2212,3 @@ h1 {
   border-radius: 10px; /* Melengkungkan sudut border */
 
 }
-
