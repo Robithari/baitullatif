@@ -691,9 +691,14 @@ nav a.button-collapse {
 5. CATEGORY
 ==================================================*/
 .section.home-category {
+  width: 90%;
   background-color: #ffffff;
   margin-top: auto;
-  margin-bottom: 0px; }
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
+}
+
 
 .section.home-category .row.icon-service {
   margin-bottom: 0px; }
