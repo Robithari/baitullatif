@@ -7718,6 +7718,12 @@ input[type=range]:focus::-ms-fill-upper {
     bottom: 68px
 }
 
+.carousel-item img {
+    width: 100%; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Tinggi otomatis agar gambar tidak terdistorsi */
+  }
+  
+
 .carousel.carousel-slider .carousel-item {
     width: 100%;
     height: 100%;
