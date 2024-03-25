@@ -1,6 +1,6 @@
 var slides = document.querySelectorAll('.slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,3000); // Ganti slide setiap 3 detik
+var slideInterval = setInterval(nextSlide,7000); // Ganti slide setiap 5 detik
 
 function nextSlide() {
   slides[currentSlide].className = 'slide';
