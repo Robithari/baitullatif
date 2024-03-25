@@ -727,9 +727,21 @@ nav a.button-collapse {
     text-align: center;
     vertical-align: middle;
     padding: 1px;
-    background: rgb(140, 244, 139);
-    border-radius: 30px;
+    /* Gradient background with vibrant green colors */
+    background: linear-gradient(to right, #30E8BF, #FF8235);
+    /* Rounded corners */
+    border-radius: 90px;
+    /* Shadow for 3D effect */
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    /* Transition for smooth hover effect */
+    transition: background 0.5s ease;
 }
+
+/* Change background on hover */
+.section.home-category .content .in-content .in-in-content:hover {
+    background: linear-gradient(to right, #FF8235, #30E8BF);
+}
+
 
 .section.home-category .icon-service .content {
   margin-top: -6px; /* Atur jarak border atas */
