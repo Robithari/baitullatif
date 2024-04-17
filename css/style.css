@@ -1387,12 +1387,11 @@ form .file-field .file-path-wrapper .file-path {
 16. TESTIMONIAL
 ==================================================*/
 .section.testimonial {
-  margin-top: 10px;
   background-color: #318bb1;
   color: #ffffff;
-  padding-top: 20px;
   position: relative;
-  padding-bottom: 10px; }
+  border-radius: 10px;
+ }
 
 .section.testimonial .testimonial-wrap {
   position: relative;
