@@ -72,7 +72,7 @@ p {
   width: 100%;
   text-align: center;
   font-weight: 600;
-  padding-top: 10px; }
+}
 
 .theme-secondary-color {
   color: #969696; }
@@ -1391,7 +1391,12 @@ form .file-field .file-path-wrapper .file-path {
   color: #ffffff;
   position: relative;
   border-radius: 10px;
- }
+  width: 80%; /* Lebar 80% dari elemen induk */
+  height: 300px; /* Tinggi 300 piksel */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .section.testimonial .testimonial-wrap {
   position: relative;
@@ -1423,8 +1428,8 @@ form .file-field .file-path-wrapper .file-path {
   position: relative; }
 
 .section.testimonial .wrap-item-testimonial .item-testimonial .client-info .client-img {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
@@ -1436,8 +1441,7 @@ form .file-field .file-path-wrapper .file-path {
   -moz-border-radius: 100%;
   border-radius: 100%; }
 
-.section.testimonial .wrap-item-testimonial .item-testimonial .client-info .rating {
-  color: #ffc700; }
+
 
 .section.testimonial .wrap-item-testimonial .item-testimonial .client-content {
   padding: 0px 0px 0px 0px; }
@@ -2243,4 +2247,10 @@ h1 {
 
 .slide.active {
   opacity: 1;
+}
+
+
+.section.list-news .container span {
+  margin-top: 20px; /* Atur jarak atas 20px */
+  margin-bottom: 10px; /* Atur jarak bawah 10px */
 }
