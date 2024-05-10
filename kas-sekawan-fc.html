@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .responsive-iframe-container {
+            position: relative;
+            padding-bottom: 100%; /* Tinggi sama dengan lebar (rasio aspek 1:1) */
+            height: 0;
+            overflow: hidden;
+        }
+        .responsive-iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive-iframe-container">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI6CNi55BdIH0zWw4cVEfwS_KszBceHrUqILrjj75Wr7g6o8oj_xpWCtSytmQJjUEh2s59Spx-o09n/pubhtml?widget=true&headers=false"></iframe>
+    </div>
+</body>
+</html>

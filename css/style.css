@@ -2018,7 +2018,8 @@ form .file-field .file-path-wrapper .file-path {
 22. FOOTER
 ==================================================*/
 footer {
-  background-color: #318bb1; }
+height: 100px;
+}
 
 footer .wrap-circle-sosmed a {
   color: #318bb1; }
@@ -2253,4 +2254,34 @@ h1 {
 .section.list-news .container span {
   margin-top: 20px; /* Atur jarak atas 20px */
   margin-bottom: 10px; /* Atur jarak bawah 10px */
+}
+
+
+#footer {
+  margin-top: 20px; /* Adjust the value as needed */
+  width: auto;
+  height: auto;
+
+
+}
+
+  /* Mengurangi spasi atas dan bawah pada teks dan ikon di footer */
+  #footer .footer-sosmed-icon .wrap-circle-sosmed a {
+    padding: 1px; /* Sesuaikan nilai padding dengan preferensi Anda */
+  }
+
+  #footer .copyright {
+    margin-top: 1px; /* Sesuaikan nilai margin atas dengan preferensi Anda */
+    margin-bottom: 1px; /* Sesuaikan nilai margin bawah dengan preferensi Anda */
+  }
+
+  #footer .footer-sosmed-icon .wrap-circle-sosmed {
+    margin-top: 5px; /* Spasi atas untuk ikon */
+    margin-bottom: 5px; /* Spasi bawah untuk ikon */
+  }
+
+  .col-md-6.text-center {
+    background-color: green;
+    border-radius: 10px;
+    padding: 1px; /* Tambahan untuk memberikan ruang antara konten dan border */
 }

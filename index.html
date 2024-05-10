@@ -1,195 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta name="google" content="notranslate">
-<meta charset="UTF-8">
-<title>Baitul Latif</title> 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-touch-fullscreen" content="yes">
-<meta name="HandheldFriendly" content="True">
-<link rel="icon" href="img/70x70.jpg" type="image/x-icon">
-<!-- CSS -->
-<link rel="stylesheet" href="lib/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
-<link rel="stylesheet" href="css/materialize.min.css">
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/style.css">
-<!-- materialize icon -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!-- Owl carousel -->
-<link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
-<!-- Slick CSS -->
-<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css">
-<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
-<!-- Magnific Popup core CSS file -->
-<link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
-</head>
-<body id="homepage">
-<!-- BEGIN PRELOADING -->
-<div class="preloading">
-  <div class="wrap-preload">
-    <div class="cssload-loader"></div>
-  </div>
-</div>
-<!-- END PRELOADING -->
-<!-- HEADER -->
-<header id="header">
-  <div class="nav-wrapper container">
-    <div class="header-menu-button">
-      <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category"></a>
-    </div>
-    <div class="header-logo">
-      <a href="#" class="nav-logo">MUSHOLAH BAITUL LATIF</a>
 
-      <div class="beground">
-      <!-- Jadwal Sholat -->
-      <div class="carousel-inner"> 
-        <div class="card-body">
-            <span class="body-text" style="font-weight: bold; font-size: 10px;">Jadwal Sholat Jember dan Sekitarnya</span>
-            <span class="text-muted" id="jadwal-date" style="color: green; font-size: 10px; font-weight: bold;">LOADING...</span>
-          <hr style="  height: 1px; /* Ubah nilai sesuai dengan kebutuhan Anda */
+<head>
+  <meta name="google" content="notranslate">
+  <meta charset="UTF-8">
+  <title>Baitul Latif</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <link rel="icon" href="img/70x70.jpg" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="lib/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- materialize icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
+</head>
+
+<body id="homepage">
+  <!-- BEGIN PRELOADING -->
+  <div class="preloading">
+    <div class="wrap-preload">
+      <div class="cssload-loader"></div>
+    </div>
+  </div>
+  <!-- END PRELOADING -->
+  <!-- HEADER -->
+  <header id="header">
+    <div class="nav-wrapper container">
+      <div class="header-menu-button">
+        <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category"></a>
+      </div>
+      <div class="header-logo">
+        <a href="#" class="nav-logo">MUSHOLAH BAITUL LATIF</a>
+
+        <div class="beground">
+          <!-- Jadwal Sholat -->
+          <div class="carousel-inner">
+            <div class="card-body">
+              <span class="body-text" style="font-weight: bold; font-size: 10px;">Jadwal Sholat Jember dan
+                Sekitarnya</span>
+              <span class="text-muted" id="jadwal-date"
+                style="color: green; font-size: 10px; font-weight: bold;">LOADING...</span>
+              <hr style="  height: 1px; /* Ubah nilai sesuai dengan kebutuhan Anda */
           background-color: black; /* Warna garis horizontal */
           border: none; /* Hapus border default */
           margin: 0px 0; /* Atur margin atas dan bawah */">
+            </div>
+          </div>
+          <table class="table" style="border-collapse: collapse; width: 100%; border: none; font-size: 9px;">
+            <thead>
+              <tr class="isi-table">
+                <th scope="col" style="padding: 1px; text-align: center; border: none;">Imsak</th>
+                <th scope="col" style="padding: 1px; text-align: center; border: none;">Subuh</th>
+                <th scope="col" style="padding: 1px; text-align: center; border: none;">Dzuhur</th>
+                <th scope="col" style="padding: 1px; text-align: center; border: none;">Ashar</th>
+                <th scope="col" style="padding: 1px; text-align: center; border: none;">Maghrib</th>
+                <th scope="col" style="padding: 1px; text-align: center; border: none;">Isya</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="input-waktu" style="border: none; color: green; font-weight: bold;">
+                <td class="imsak" style="padding: 1px; text-align: center; border: none;">--:--</td>
+                <td class="subuh" style="padding: 1px; text-align: center; border: none;">--:--</td>
+                <td class="dzuhur" style="padding: 1px; text-align: center; border: none;">--:--</td>
+                <td class="ashar" style="padding: 1px; text-align: center; border: none;">--:--</td>
+                <td class="maghrib" style="padding: 1px; text-align: center; border: none;">--:--</td>
+                <td class="isya" style="padding: 1px; text-align: center; border: none;">--:--</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- Jadwal Sholat end -->
+          <!-- menuju waktu sholat -->
+          <div id="menuju-waktu-sholat">Konten Anda di sini</div>
+        </div>
+
+        <!-- menuju waktu sholat end -->
+      </div>
+    </div>
+  </header>
+  <!-- HEADER end -->
+
+  <!-- SIDE NAV-->
+  <nav>
+
+
+  </nav>
+  <!-- END SIDENAV-->
+  <!-- MAIN SLIDER -->
+  <div>
+    <div class="slider">
+      <div class="slide active">
+        <img src="img/buka_bersama.png" alt="satu">
+      </div>
+      <div class="slide">
+        <img src="img/idul_adha.png" alt="dua">
+      </div>
+    </div>
+  </div>
+
+  <!-- END MAIN SLIDER -->
+  <!-- CATEGORY -->
+  <div class="section home-category">
+    <div class="container">
+      <div class="row icon-service">
+        <div class="col s4 m4 l6">
+          <a href="Sholawatan.html">
+            <div class="content">
+              <div class="in-content">
+                <div class="in-in-content">
+                  <img style="height: 50px; width: 50px;" src="img/Sholawat.png" alt="category" class="icon">
+                  <h5 style="font-size: 9px;"><strong>SHOLAWATAN</strong></h5>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s4 m4 l6">
+          <a href="Info.html" class="icon-content">
+            <div class="content fadetransition">
+              <div class="in-content">
+                <div class="in-in-content">
+                  <img style="height: 50px; width: 50px;" src="img/info.png" alt="category">
+                  <h5 style="font-size: 10px;"><strong>INFORMASI</strong></h5>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s4 m4 l6">
+          <a href="quran.html" class="icon-content">
+            <div class="content fadetransition">
+              <div class="in-content">
+                <div class="in-in-content">
+                  <img style="height: 50px; width: 50px;" src="img/quran.png" alt="category">
+                  <h5 style="font-size: 10px;"><strong>AL-QURAN</strong></h5>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s4 m4 l6"><a class="icon-content">
+            <div class="content fadetransition">
+              <div class="in-content">
+                <div class="in-in-content">
+                  <img style="height: 50px; width: 50px;" src="img/kas.png" alt="category">
+                  <h5 style="font-size: 10px;"><strong>KAS</strong></h5>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s4 m4 l6"><a class="icon-content">
+            <div class="content fadetransition">
+              <div class="in-content">
+                <div class="in-in-content">
+                  <img style="height: 50px; width: 50px;" src="img/agenda.png" alt="category">
+                  <h5 style="font-size: 10px;"><strong>AGENDA</strong></h5>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col s4 m4 l6"><a class="icon-content">
+            <div class="content fadetransition">
+              <div class="in-content">
+                <div class="in-in-content">
+                  <img style="height: 50px; width: 50px;" src="img/kitab.png" alt="category">
+                  <h5 style="font-size: 10px;"><strong>AL-QURAN</strong></h5>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-      <table class="table" style="border-collapse: collapse; width: 100%; border: none; font-size: 9px;">
-        <thead>
-          <tr class="isi-table">
-            <th scope="col" style="padding: 1px; text-align: center; border: none;">Imsak</th>
-            <th scope="col" style="padding: 1px; text-align: center; border: none;">Subuh</th>
-            <th scope="col" style="padding: 1px; text-align: center; border: none;">Dzuhur</th>
-            <th scope="col" style="padding: 1px; text-align: center; border: none;">Ashar</th>
-            <th scope="col" style="padding: 1px; text-align: center; border: none;">Maghrib</th>
-            <th scope="col" style="padding: 1px; text-align: center; border: none;">Isya</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="input-waktu" style="border: none; color: green; font-weight: bold;">
-            <td class="imsak" style="padding: 1px; text-align: center; border: none;">--:--</td>
-            <td class="subuh" style="padding: 1px; text-align: center; border: none;">--:--</td>
-            <td class="dzuhur" style="padding: 1px; text-align: center; border: none;">--:--</td>
-            <td class="ashar" style="padding: 1px; text-align: center; border: none;">--:--</td>
-            <td class="maghrib" style="padding: 1px; text-align: center; border: none;">--:--</td>
-            <td class="isya" style="padding: 1px; text-align: center; border: none;">--:--</td>
-          </tr>
-        </tbody>
-      </table>
-      <!-- Jadwal Sholat end -->
-      <!-- menuju waktu sholat -->
-        <div id="menuju-waktu-sholat">Konten Anda di sini</div>
-    </div>
-
-      <!-- menuju waktu sholat end -->
     </div>
   </div>
-</header>
-<!-- HEADER end -->
+  <!-- END CATEGORY -->
 
-<!-- SIDE NAV-->
-<nav>
-
-
-</nav>
-<!-- END SIDENAV-->
-<!-- MAIN SLIDER -->
-<div>
-<div class="slider">
-  <div class="slide active">
-    <img src="img/buka_bersama.png" alt="satu">
-  </div>
-  <div class="slide">
-    <img src="img/idul_adha.png" alt="dua">
-  </div>
-</div>
-</div>
-
-<!-- END MAIN SLIDER -->
-<!-- CATEGORY -->
-<div class="section home-category">
-  <div class="container">
-    <div class="row icon-service">
-      <div class="col s4 m4 l6">
-        <a href="Sholawatan.html">
-          <div class="content">
-            <div class="in-content">
-              <div class="in-in-content">
-                <img style="height: 50px; width: 50px;" src="img/Sholawat.png" alt="category" class="icon">
-                <h5 style="font-size: 9px;"><strong>SHOLAWATAN</strong></h5>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div> 
-      <div class="col s4 m4 l6">
-        <a href="Info.html" class="icon-content">
-          <div class="content fadetransition">
-            <div class="in-content">
-              <div class="in-in-content">
-                <img style="height: 50px; width: 50px;" src="img/info.png" alt="category">
-                <h5 style="font-size: 10px;"><strong>INFORMASI</strong></h5>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col s4 m4 l6">
-        <a href="quran.html" class="icon-content">
-          <div class="content fadetransition">
-            <div class="in-content">
-              <div class="in-in-content">
-                <img style="height: 50px; width: 50px;" src="img/quran.png" alt="category">
-                <h5 style="font-size: 10px;"><strong>AL-QURAN</strong></h5>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col s4 m4 l6"><a class="icon-content">
-        <div class="content fadetransition">
-          <div class="in-content">
-            <div class="in-in-content">
-              <img style="height: 50px; width: 50px;" src="img/kas.png" alt="category">
-               <h5 style="font-size: 10px;"><strong>KAS</strong></h5>
-            </div>
-          </div>
-        </div></a>
-      </div>
-      <div class="col s4 m4 l6"><a class="icon-content">
-        <div class="content fadetransition">
-          <div class="in-content">
-            <div class="in-in-content">
-              <img style="height: 50px; width: 50px;" src="img/agenda.png" alt="category">
-              <h5 style="font-size: 10px;"><strong>AGENDA</strong></h5>
-            </div>
-          </div>
-        </div></a>
-      </div>
-      <div class="col s4 m4 l6"><a class="icon-content">
-        <div class="content fadetransition">
-          <div class="in-content">
-            <div class="in-in-content">
-              <img style="height: 50px; width: 50px;" src="img/kitab.png" alt="category">
-              <h5 style="font-size: 10px;"><strong>AL-QURAN</strong></h5>
-            </div>
-          </div>
-        </div></a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- END CATEGORY -->
-
-<!-- NEWS -->
-<div class="section list-news">
+  <!-- NEWS -->
+  <div class="section list-news">
     <div class="row row-list-news">
       <div class="col s12">
         <!-- News item-->
         <div class="col-md-6 text-center">
-          <p class="custom-green-text">informasi</p>
-        </div>        <div class="news-item">
+          <div style="font-size: 18px; font-weight: bold; text-align: center; color: white; ">INFORMASI</div>
+        </div>
+        <div class="news-item">
           <div class="news-tem-image">
             <img src="img/news1.jpg">
           </div>
@@ -211,7 +219,8 @@
             <div class="list-news-title">
               Keutamaan dan Hukum Shalat Berjamaah
             </div>
-            Banyak sekali fadhilah atau keutamaan shalat yang dilakukan secara berjamaah. Di antara keutamaannya adalah...
+            Banyak sekali fadhilah atau keutamaan shalat yang dilakukan secara berjamaah. Di antara keutamaannya
+            adalah...
             <a href="Keutamaan dan Hukum Shalat Berjamaah.html" class="readmore">Baca Selengkapnya</a>
           </div>
         </div>
@@ -235,205 +244,167 @@
         </div>
       </div>
     </div>
-</div>
-
- 
-
-<!-- END NEWS -->
+  </div>
 
 
- 
-<!-- TESTIMONIAL  -->
-<div class="section testimonial">
-  <div class="testimonial-wrap">
+  <!-- TESTIMONIAL  -->
+  <div class="section testimonial">
+    <div class="testimonial-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="section-title">
+              <div style="font-size: 24px; font-weight: bold;">TAKMIR BAITULLATIF</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="wrap-item-testimonial">
+            <div id="testimonial-item" class="owl-carousel">
+              <!-- item -->
+              <div class="item">
+                <div class="item-testimonial">
+                  <div class="client-info">
+                    <div class="client-img">
+                      <img src="img/profile6.jpg" alt="profile">
+                    </div>
+                  </div>
+                  <div class="client-content">
+                    <div class="client-title">
+                      <h4>Triono, Sp.d</h4>
+                      <h5>Ketua</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="item">
+                <div class="item-testimonial">
+                  <div class="client-info">
+                    <div class="client-img">
+                      <img src="img/profile5.jpg" alt="profile">
+                    </div>
+                  </div>
+                  <div class="client-content">
+                    <div class="client-title">
+                      <h4>Elly Doe</h4>
+                      <h5>Entrepreneur</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="item">
+                <div class="item-testimonial">
+                  <div class="client-info">
+                    <div class="client-img">
+                      <img src="img/profile4.jpg" alt="profile">
+                    </div>
+                  </div>
+                  <div class="client-content">
+                    <div class="client-title">
+                      <h4>Tayoo Doe</h4>
+                      <h5>Driver</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background-testimonial"></div>
+  </div>
+
+  <!-- END TESTIMONIAL  -->
+  <!-- FOOTER  -->
+  <footer id="footer">
     <div class="container">
-      <div class="row">
+      <div class="row row-footer-icon">
         <div class="col s12">
-          <div class="section-title">
-             CUSTOMER REVIEWS
+          <div class="footer-sosmed-icon ">
+            <div class="wrap-circle-sosmed ">
+              <a href="#">
+                <div class="circle-sosmed">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </a>
+            </div>
+            <div class="wrap-circle-sosmed ">
+              <a href="#">
+                <div class="circle-sosmed">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </a>
+            </div>
+            <div class="wrap-circle-sosmed ">
+              <a href="#">
+                <div class="circle-sosmed">
+                  <i class="fab fa-twitter"></i>
+                </div>
+              </a>
+            </div>
+            <div class="wrap-circle-sosmed ">
+              <a href="#">
+                <div class="circle-sosmed">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="wrap-item-testimonial">
-          <div id="testimonial-item" class="owl-carousel">
-            <!-- item -->
-            <div class="item">
-              <div class="item-testimonial">
-                <div class="client-info">
-                  <div class="client-img">
-                    <img src="img/profile6.jpg" alt="profile">
-                  </div>
-                </div>
-                <div class="client-content">
-                  <div class="client-title">
-                    <h4>Triono, Sp.d</h4>
-                    <h5>Ketua</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end item -->
-            <!-- item -->
-            <div class="item">
-              <div class="item-testimonial">
-                <div class="client-info">
-                  <div class="client-img">
-                    <img src="img/profile5.jpg" alt="profile">
-                  </div>
-                  <div class="rating">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </div>
-                <div class="client-content">
-                  <p>
-                     Best place and fast respond, Thank You!
-                  </p>
-                  <div class="client-title">
-                    <h4>Elly Doe</h4>
-                    <h5>Entrepreneur</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end item -->
-            <!-- item -->
-            <div class="item">
-              <div class="item-testimonial">
-                <div class="client-info">
-                  <div class="client-img">
-                    <img src="img/profile4.jpg" alt="profile">
-                  </div>
-                  <div class="rating">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                </div>
-                <div class="client-content">
-                  <p>
-                     Good Product, I bought health products here..
-                  </p>
-                  <div class="client-title">
-                    <h4>Tayoo Doe</h4>
-                    <h5>Driver</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end item --></div>
-        </div>
+      <div class="row copyright">
+        2019 <span>BAITULLATIF</span>, All rights reserved.
       </div>
     </div>
-  </div>
-  <div class="background-testimonial"></div>
-</div>
-<!-- END TESTIMONIAL  -->
-<!-- SUBSCRIBE -->
-<div class="section subscribe">
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <div class="section-title">SUBSCRIBE</div>
-        <p class="center">Get healthy news and solutions every day</p>
-        <div class="mail-subscribe-box">
-          <input class="form-control" name="user-email" placeholder="Enter email address" value="" type="email">
-          <i class="fa fa-angle-right"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-subscribe">
-    <img src="img/bg-profile.jpg">
-  </div>
-</div>
-<!-- END SUBSCRIBE -->
-<!-- FOOTER  -->
-<footer id="footer">
-<div class="container">
-  <div class="row row-footer-icon">
-    <div class="col s12">
-      <div class="footer-sosmed-icon ">
-        <div class="wrap-circle-sosmed ">
-          <a href="#">
-          <div class="circle-sosmed">
-            <i class="fab fa-instagram"></i>
-          </div>
-          </a>
-        </div>
-        <div class="wrap-circle-sosmed ">
-          <a href="#">
-          <div class="circle-sosmed">
-            <i class="fab fa-linkedin-in"></i>
-          </div>
-          </a>
-        </div>
-        <div class="wrap-circle-sosmed ">
-          <a href="#">
-          <div class="circle-sosmed">
-            <i class="fab fa-twitter"></i>
-          </div>
-          </a>
-        </div>
-        <div class="wrap-circle-sosmed ">
-          <a href="#">
-          <div class="circle-sosmed">
-            <i class="fab fa-facebook-f"></i>
-          </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row copyright">
-     2019 <span>BAITULLATIF</span>, All rights reserved.
-  </div>
-</div>
-</footer>
-<!-- END FOOTER -->
-<!-- Script -->
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
-<script src="js/materialize.min.js"></script>
-<!-- Owl carousel -->
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<!-- Magnific Popup core JS file -->
-<script src="lib/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
-<!-- Slick JS -->
-<script src="lib/slick/slick/slick.min.js"></script>
-<!-- Custom script -->
-<script src="js/custom.js"></script>
+  </footer>
+  <!-- END FOOTER -->
+  <!-- Script -->
+  <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <!-- Owl carousel -->
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="lib/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+  <!-- Slick JS -->
+  <script src="lib/slick/slick/slick.min.js"></script>
+  <!-- Custom script -->
+  <script src="js/custom.js"></script>
 
 
-<style>
-  .icon-content a {
-    pointer-events: none;
-  }
-</style>
+  <style>
+    .icon-content a {
+      pointer-events: none;
+    }
+  </style>
 
-<style>
-  .icon-content a {
-    pointer-events: none;
-  }
-</style>
+  <style>
+    .icon-content a {
+      pointer-events: none;
+    }
+  </style>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-<script src="js/jadwalSholat.js"></script>
-<script src="js/slide.js"></script>
+  <script src="js/jadwalSholat.js"></script>
+  <script src="js/slide.js"></script>
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 
 </body>
 
 <!-- Mirrored from uidevr.com/tf/asiapp/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Mar 2021 20:21:46 GMT -->
+
 </html>
